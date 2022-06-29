@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gerador de senhas: </title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="pw-container">
+            <div class="pw-header">
+                <div class="pw">
+                    <span id="pw"></span>
+                    <button id="copy">Copy</button>
+                </div>
+            </div>
+            <div class="pw-body">
+                <div class="form-control">
+                    <label for="len">Tamanho da senha: </label>
+                    <input id="len" value="15" type="number" min="2" max="30" />
+                </div>
+                <div class="form-control">
+                    <label for="letraMaiuscula">Ter letras maisuclas</label>
+                    <input id="letraMaiuscula" type="checkbox" />
+                </div>
+                <div class="form-control">
+                    <label for="letraMinuscula">Ter letras minusculas</label>
+                    <input id="letraMinuscula" type="checkbox" />
+                </div>
+                <div class="form-control">
+                    <label for="Numero">Ter números</label>
+                    <input id="Numero" type="checkbox" />
+                </div>
+                <div class="form-control">
+                    <label for="Simbolo">Ter símbolos</label>
+                    <input id="Simbolo" type="checkbox" />
+                </div>
+                <button onclick="GerarSenha()" id="gerar">
+                    Gerar Senha 
+                </button>
+            </div>
+        </div>
+    </body>
+</html>

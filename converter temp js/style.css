@@ -1,0 +1,40 @@
+body {
+    background-image: linear-gradient(to left, rgb(170, 201, 248), rgb(126, 176, 252));
+    margin-top: 300px;
+    font-size:x-large;
+}
+
+.conteudo{
+    background-image: linear-gradient(to right, rgb(170, 201, 248), rgba(136, 183, 255, 0.753));
+    border-radius: 15px; 
+    border: 3px solid rgba(37, 121, 199, 0.938);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 55px;
+    border-radius: 15px;
+    width: 30%;
+    text-align: center;
+}
+
+#button{
+    background-color: rgb(204, 229, 243);
+    border: 2px solid  ba(37, 121, 199, 0.938);
+    font-weight:850;
+    margin-bottom: 12px;
+    margin-top: 20px;
+    height:25px;
+    border-radius: 25%;
+     
+}
+
+#result{
+    background-color: rgb(160, 196, 250);
+    border: 3px solid rgba(37, 121, 199, 0.938);
+    padding: 20px;
+   text-align: center;
+    border-radius: 15px;
+    width: 200px;
+    margin: auto;
+}

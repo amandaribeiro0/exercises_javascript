@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>converter temp</title>
+</head>
+<body>
+    <div class="conteudo">
+        <h2>Conversor de Temperaturas</h2>
+
+        <h4>Digite a temperatura em celsius:</h4>
+        <input type="text" id="TempCelsius">
+
+                <div class="botoes">
+                    <input class="bt" type="button" value="Fahrenheit" id="button"  onclick="converterFahrenheit();">
+                    <input class="bt"  type="button" value="Kelvin" id="button"  onclick="converterKelvin();">
+                    <button type="button" onclick=" localStorage.clear(); location.reload();" id="button"> Clear </button>
+                </div>
+         <h4 id="result"></h4>       
+    </div>
+    
+    <script>
+
+        function converterFahrenheit() {
+            var sTempCelsius = document.getElementById("TempCelsius").value;
+            
+            sTempCelsius = parseFloat(sTempCelsius)
+
+            console.log(sTempCelsius)
+
+            resultFahrenheit = (sTempCelsius * 9/5) + 32
+
+            console.log(resultFahrenheit)
+
+            document.getElementById("result").innerText = resultFahrenheit;
+        }
+
+  ///////////////////////////////////////////////////////////////////////////////////////////////////
+
+        function converterKelvin() {
+            var sTempCelsius = document.getElementById("TempCelsius").value;
+            
+            sTempCelsius = parseFloat(sTempCelsius)
+
+            console.log(sTempCelsius)
+
+            resultKelvin = sTempCelsius + 273.15
+
+            console.log(resultKelvin)
+
+            document.getElementById("result").innerText = resultKelvin;
+        }
+       
+
+    </script>
+
+</body>
+</html>

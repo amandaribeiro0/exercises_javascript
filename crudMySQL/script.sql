@@ -1,0 +1,20 @@
+CREATE DATABASE exercicio;
+
+USE exercicio;
+
+CREATE TABLE alunos(
+	ID int auto_increment,
+    MATRICULA CHAR(10) NOT NULL,
+    CPF CHAR(11) NOT NULL,
+    NOME VARCHAR(50) NOT NULL,
+    IDADE CHAR(2) NOT NULL,
+    PRIMARY KEY (ID)
+);
+select * from alunos;
+
+INSERT INTO alunos VALUES (NULL,'1587412369','42309720836','Amanda Ribeiro','17');
+INSERT INTO alunos VALUES (NULL,'5201478963','25478936950','Kauã Dias','18');
+INSERT INTO alunos VALUES (NULL,'5021369782','12034789607','Guilherme Morais','18');
+INSERT INTO alunos VALUES (NULL,'5874103698','85214936782','Hugo Nunes','20');
+INSERT INTO alunos VALUES (NULL,'2589631478','42456920830','Felipe Sousa','19');
+

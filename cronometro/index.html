@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Cronômetro</title>
+</head>
+<body>
+    
+    <div>
+        <h1>TIMER POMODORO</h1>
+        <h1 id="timer" >25:00</h1>
+        <input class="bt"  type="button" value="Start" id="button"  onclick="start();">
+        <input class="bt"  type="button" value="Pause" id="button"  onclick="pause();">
+        <input class="bt"  type="button" value="Stop" id="button"  onclick="stopp();">
+        <button type="button" onclick=" localStorage.clear(); location.reload();" id="button"> Reset </button>
+    </div>
+</body>
+</html>
